@@ -7,6 +7,10 @@ from rich.markdown import Markdown
 
 console = Console()
 
+"""
+结点不仅仅支持函数，也可以支持类的实例
+"""
+
 # state = {
 #     "user_ask":"write hello world in python",
 #     "ai_answer":""

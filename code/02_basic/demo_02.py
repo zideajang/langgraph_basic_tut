@@ -1,7 +1,12 @@
 from langgraph.graph import Graph
 from langchain_community.chat_models import ChatOllama
 from langchain_core.runnables.graph import CurveStyle, MermaidDrawMethod, NodeStyles
-# 定义节点
+
+
+"""
+对于结点引入 LLM 作为结点功能
+将一问一答简单流程转换为图形式来表示
+"""
 
 llm = ChatOllama(
     model="llama3.1",

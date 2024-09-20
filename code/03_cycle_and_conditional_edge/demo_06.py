@@ -1,6 +1,10 @@
 from langchain_core.messages import HumanMessage
 from langgraph.graph import END, MessageGraph
 
+"""
+选择性结点
+"""
+
 # 功能
 def entry(input: list[HumanMessage]):
     return input

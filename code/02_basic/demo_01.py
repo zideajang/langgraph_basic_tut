@@ -1,11 +1,13 @@
 from langgraph.graph import Graph
 
 """
-node(定义节点)
-edge(用边将节点连接)
-start 和 end
-
 func_1(input) -> func_2(output_func_1)->output
+
+设计节点和边
+- 定义节点 node
+- 用边将节点连接 edge
+指定 start 和 end 节点
+
 """
 
 

@@ -2,6 +2,10 @@ from langchain_core.messages import HumanMessage
 from langgraph.graph import END, MessageGraph
 from langchain_community.chat_models import ChatOllama
 
+"""
+带有环的图
+"""
+
 model = ChatOllama(model="llama3.1",temperature=0)
 
 def entry(input: list[HumanMessage]):
