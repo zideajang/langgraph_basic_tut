@@ -26,6 +26,7 @@ class AgentState(TypedDict):
 
 
 def _call_model(state,config):
+    # config 是 dict 类型
     model_name = config["configurable"].get("model","llama")
     messages = state["messages"]
     console.print(model_name)
@@ -33,6 +34,7 @@ def _call_model(state,config):
         messages = [
             SystemMessage(content=config["configurable"]["system_message"])
         ] + messages
+    # 根据 config 配置获取 model_name
     m =  models[model_name]
     response = m.invoke(state["messages"])
     return {"messages": [response]}
